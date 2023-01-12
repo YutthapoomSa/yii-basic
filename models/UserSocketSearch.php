@@ -4,12 +4,12 @@ namespace app\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\UserToken;
+use app\models\UserSocket;
 
 /**
- * UserTokenSearch represents the model behind the search form of `app\models\UserToken`.
+ * UserSocketSearch represents the model behind the search form of `app\models\UserSocket`.
  */
-class UserTokenSearch extends UserToken
+class UserSocketSearch extends UserSocket
 {
     /**
      * {@inheritdoc}
@@ -18,14 +18,13 @@ class UserTokenSearch extends UserToken
     {
         return [
             [['id', 'userId'], 'integer'],
-            [['accessToken', 'refreshToken', 'expire', 'createdAt', 'updatedAt'], 'safe'],
+            [['refreshToken', 'createdAt', 'updatedAt'], 'safe'],
         ];
     }
 
     /**
      * {@inheritdoc}
      */
-    
     public function scenarios()
     {
         // bypass scenarios() implementation in the parent class
@@ -41,7 +40,7 @@ class UserTokenSearch extends UserToken
      */
     public function search($params)
     {
-        $query = UserToken::find();
+        $query = UserSocket::find();
 
         // add conditions that should always apply here
 
@@ -65,9 +64,7 @@ class UserTokenSearch extends UserToken
             'updatedAt' => $this->updatedAt,
         ]);
 
-        $query->andFilterWhere(['like', 'accessToken', $this->accessToken])
-            ->andFilterWhere(['like', 'refreshToken', $this->refreshToken])
-            ->andFilterWhere(['like', 'expire', $this->expire]);
+        $query->andFilterWhere(['like', 'refreshToken', $this->refreshToken]);
 
         return $dataProvider;
     }
