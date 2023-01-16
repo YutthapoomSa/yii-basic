@@ -133,4 +133,9 @@ class SiteController extends Controller
         return $this->render(view:'Home');
     }
 
+    public function actionLog()
+    {
+        $this->layout = 'login';
+        return $this->render(view:'log');
+    }
 }

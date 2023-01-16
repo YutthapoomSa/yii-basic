@@ -1,5 +1,6 @@
 
 <?php
+    $this->registerCssFile("@web/css/home.css");
     $this->title = 'Home';
 ?>
 
