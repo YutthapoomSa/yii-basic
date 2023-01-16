@@ -12,13 +12,9 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'sub_menu_name')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'submenu_name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'urlIframe')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'urlLink')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'urlDesign')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'url')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'menu_id')->textInput() ?>
 

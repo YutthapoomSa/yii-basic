@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /** @var yii\web\View $this */
 /** @var app\models\SubMenu $model */
 
-$this->title = $model->id;
+$this->title = $model->submenu_id;
 $this->params['breadcrumbs'][] = ['label' => 'Sub Menus', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -16,8 +16,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
+        <?= Html::a('Update', ['update', 'submenu_id' => $model->submenu_id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Delete', ['delete', 'submenu_id' => $model->submenu_id], [
             'class' => 'btn btn-danger',
             'data' => [
                 'confirm' => 'Are you sure you want to delete this item?',
@@ -29,11 +29,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
-            'sub_menu_name',
-            'urlIframe',
-            'urlLink',
-            'urlDesign',
+            'submenu_id',
+            'submenu_name',
+            'url:url',
             'menu_id',
         ],
     ]) ?>
