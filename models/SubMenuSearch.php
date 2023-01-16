@@ -17,8 +17,8 @@ class SubMenuSearch extends SubMenu
     public function rules()
     {
         return [
-            [['id', 'menu_id'], 'integer'],
-            [['sub_menu_name', 'urlIframe', 'urlLink', 'urlDesign'], 'safe'],
+            [['submenu_id', 'menu_id'], 'integer'],
+            [['submenu_name', 'url'], 'safe'],
         ];
     }
 
@@ -58,14 +58,12 @@ class SubMenuSearch extends SubMenu
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'id' => $this->id,
+            'submenu_id' => $this->submenu_id,
             'menu_id' => $this->menu_id,
         ]);
 
-        $query->andFilterWhere(['like', 'sub_menu_name', $this->sub_menu_name])
-            ->andFilterWhere(['like', 'urlIframe', $this->urlIframe])
-            ->andFilterWhere(['like', 'urlLink', $this->urlLink])
-            ->andFilterWhere(['like', 'urlDesign', $this->urlDesign]);
+        $query->andFilterWhere(['like', 'submenu_name', $this->submenu_name])
+            ->andFilterWhere(['like', 'url', $this->url]);
 
         return $dataProvider;
     }

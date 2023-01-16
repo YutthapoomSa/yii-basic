@@ -7,15 +7,12 @@ use Yii;
 /**
  * This is the model class for table "sub_menu".
  *
- * @property int $id หมายเลขลำดับเมนูย่อย
- * @property string $sub_menu_name
- * @property string $urlIframe url หน้า dashBoard
- * @property string $urlLink url อื่นๆ
- * @property string $urlDesign หน้าว่าง
- * @property int $menu_id ลำดับของเมนูหลัก
+ * @property int $submenu_id
+ * @property string $submenu_name ชื่อเมนูย่อย
+ * @property string $url url
+ * @property int $menu_id
  *
  * @property Menu $menu
- * @property Menu $menu0
  */
 class SubMenu extends \yii\db\ActiveRecord
 {
@@ -33,10 +30,11 @@ class SubMenu extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['sub_menu_name', 'urlIframe', 'urlLink', 'urlDesign', 'menu_id'], 'required'],
+            [['submenu_name', 'url', 'menu_id'], 'required'],
             [['menu_id'], 'integer'],
-            [['sub_menu_name', 'urlIframe', 'urlLink', 'urlDesign'], 'string', 'max' => 255],
-            [['menu_id'], 'exist', 'skipOnError' => true, 'targetClass' => Menu::class, 'targetAttribute' => ['menu_id' => 'id']],
+            [['submenu_name'], 'string', 'max' => 150],
+            [['url'], 'string', 'max' => 255],
+            [['menu_id'], 'exist', 'skipOnError' => true, 'targetClass' => Menu::class, 'targetAttribute' => ['menu_id' => 'menu_id']],
         ];
     }
 
@@ -46,11 +44,9 @@ class SubMenu extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'sub_menu_name' => 'Sub Menu Name',
-            'urlIframe' => 'Url Iframe',
-            'urlLink' => 'Url Link',
-            'urlDesign' => 'Url Design',
+            'submenu_id' => 'Submenu ID',
+            'submenu_name' => 'Submenu Name',
+            'url' => 'Url',
             'menu_id' => 'Menu ID',
         ];
     }
@@ -62,16 +58,6 @@ class SubMenu extends \yii\db\ActiveRecord
      */
     public function getMenu()
     {
-        return $this->hasOne(Menu::class, ['id' => 'menu_id']);
-    }
-
-    /**
-     * Gets query for [[Menu0]].
-     *
-     * @return \yii\db\ActiveQuery
-     */
-    public function getMenu0()
-    {
-        return $this->hasOne(Menu::class, ['id' => 'menu_id']);
+        return $this->hasOne(Menu::class, ['menu_id' => 'menu_id']);
     }
 }
