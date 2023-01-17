@@ -1,7 +1,60 @@
- body {
-    background-color: blue;
+ body{
+   background-color: #fff;
+   font-family: 'Noto Sans Thai', sans-serif;
  }
 
- h1{
-    color:rebeccapurple;
+ h1.header{
+    color:rgba(60, 121, 245, 1);
+    text-shadow: 0.02em 0.03em 0.01em #333;
+    font-family: 'Limelight', cursive;
+    font-size: 80px;
+    font-weight: 600;
+    position: relative;
+    text-align:center;
  }
+
+ p{
+   font-family: 'Noto Sans Thai', sans-serif;
+   font-size: 20px;
+   font-weight: 300;
+   text-align:center;
+ }
+
+ .bgfull{
+   background-image: url(images/bg-home);
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .buttonhome{
+   font-family: 'Noto Sans Thai', sans-serif;
+   background: #5E5DF0;
+   border-radius: 999px;
+   box-shadow: #5E5DF0 0 10px 20px -10px;
+   box-sizing: border-box;
+   color: #FFFFFF;
+   cursor: pointer;
+   font-size: 22px;
+   font-weight: 600;
+   line-height: 25px;
+   opacity: 1;
+   outline: 0 solid transparent;
+   padding: 10px 20px;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   width: 60%;
+   word-break: break-word;
+   border: 0;
+
+ }
+
+ .button2:hover {
+    background: #6e6ee1;
+    box-shadow: 0 8px 12px 0 rgba(73, 73, 73, 0.371),0 8px 20px 0 rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 700;
+  }
+
