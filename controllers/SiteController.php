@@ -71,7 +71,8 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
-
+        
+        $this->layout = 'login';
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -136,6 +137,19 @@ class SiteController extends Controller
     public function actionLog()
     {
         $this->layout = 'login';
-        return $this->render(view:'log');
+
+        if (!Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
+
+        $model = new LoginForm();
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            return $this->goBack();
+        }
+
+        $model->password = '';
+        return $this->render('log', [
+            'model' => $model,
+        ]);
     }
 }
