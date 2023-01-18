@@ -32,10 +32,6 @@ $this->registerCssFile('@web/css/loginHome.css');
 			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
-                        <div class="dot">
-                            <?= Html::img('images/logowachi2.png'); ?>
-                        </div>
-
                         <p>
                         <h3 class="mb-4 text-center" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); color:#333333; font-weight:bold;"><?= Html::encode($this->title) ?></h3>
                         </p>
