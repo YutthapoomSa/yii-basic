@@ -8,18 +8,17 @@ use yii\widgets\ActiveForm;
 /** @var yii\widgets\ActiveForm $form */
 ?>
 
-<div class="menu-form">
+<div class="menu-form" style="margin-top:30px";>
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin();?>
 
-    <?= $form->field($model, 'menu_name')->textInput(['maxlength' => true]) ?>
+    <?=$form->field($model, 'menu_name')->textInput(['maxlength' => true])?>
+    <?=$form->field($model, 'url')->textInput(['maxlength' => true])?>
 
-    <?= $form->field($model, 'url')->textInput(['maxlength' => true]) ?>
-
-    <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+    <div class="form-group" style="margin-top:20px";>
+        <?=Html::submitButton('Save', ['class' => 'btn btn-success'])?>
     </div>
 
-    <?php ActiveForm::end(); ?>
+    <?php ActiveForm::end();?>
 
 </div>

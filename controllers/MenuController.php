@@ -4,9 +4,9 @@ namespace app\controllers;
 
 use app\models\Menu;
 use app\models\MenuSearch;
+use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii\filters\VerbFilter;
 
 /**
  * MenuController implements the CRUD actions for Menu model.
@@ -125,10 +125,24 @@ class MenuController extends Controller
      */
     protected function findModel($menu_id)
     {
-        if (($model = Menu::findOne(['menu_id' => $menu_id])) !== null) {
-            return $model;
-        }
+        // if (($model = Menu::findOne(['menu_id' => $menu_id])) !== null) {
+        //     return $model;
+        // }
+        $menu_id = Menu::find()
+            ->where(['id' => 1])
+            ->one();
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+    /**
+    * Finds the Menu model based on its primary key value.
+     * If the model is not found, a 404 HTTP exception will be thrown.
+     * @param int $menu_id Menu ID
+     * @return Menu the loaded model
+     * @throws NotFoundHttpException if the model cannot be found
+     */
+    public function actionDashboard()
+    {
+        return $this->render('dashboard');
     }
 }
