@@ -14,21 +14,30 @@
 <link rel="stylesheet" href="css/home.css">
 
 </head>
-<body class="img js-fullheight" style="background-image: url(images/coverhome.png); height: 100px; background-position: center; background-repeat: no-repeat; background-size: cover; object-fit:cover;">
-    
+<body class="img js-fullheight" style="background-image: url(images/bghome.png); height: 100px; background-position: center; background-repeat: no-repeat; background-size: cover; object-fit:cover;">
   <div class="container">
-    <div class="child">
-      <div class="col-4 col-s-8">
-
-        <h1 class="header">Smart <br>Dashboard</h1>
-    
-        <p>ระบบแดชบอร์ดอัจฉริยะเป็นระบบหน้าจอที่สรุปข้อมูลทุกอย่างให้อยู่ในหน้าจอเดียวเพื่อให้ผู้บริหารดูข้อมูลแล้วสามารถเข้าใจได้ทันที</p>
-      
-        <div style="text-align:center;"><a href="index.php?r=site%2Flogin" ><button class="buttonhome button2" role="button"> เข้าสู่ระบบ </button></a></div>
-      
+    <div class="row">
+      <div class="col-sm-6 ">
+        <div class="box-item">
+            <h1 > Smart <br>Dashboard</h1>
+        
+            <p>ระบบแดชบอร์ดอัจฉริยะ
+              <br>เป็นระบบหน้าจอที่สรุปข้อมูลให้อยู่ในหน้าจอเดียว
+              <br>เพื่อให้ผู้บริหารดูข้อมูลแล้วสามารถเข้าใจได้ทันที</p><br>
+          
+            <div style="text-align:center;"><a href="index.php?r=site%2Flogin" ><button class="buttonhome button2" role="button"> เข้าสู่ระบบ </button></a></div>
+          
+        </div>
       </div>
+
+      <div class="col-sm-6 ">
+		    <div class="box-item">
+          <img src="images/bgobjecthomee.png" class="controller">
+        </div>
+      </div>
+
     </div>
   </div>
-
-</body>
+  
+  </body>
 </html>
