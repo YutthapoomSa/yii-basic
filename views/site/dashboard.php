@@ -8,10 +8,10 @@ use yii\bootstrap5\Html;
 
 $this->title = 'Dashboard';
 $this->registerCssFile('@web/css/dashboard.css');
-$this->registerJsFile(
-    '@web/js/template.js','@web/js/ace.js',
-    ['depends' => [\yii\web\JqueryAsset::class]]
-);
+// $this->registerJsFile(
+//     '@web/js/template.js','@web/js/ace.js',
+//     ['depends' => [\yii\web\JqueryAsset::class]]
+// );
 ?>
 
 <!DOCTYPE html>
