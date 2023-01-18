@@ -26,7 +26,7 @@ $this->registerCssFile('@web/css/loginHome.css');
 </head>
 
 
-<body class="img js-fullheight" style="background-image: url(images/cover-2.jpg); height: 100px; background-position: center; background-repeat: no-repeat; background-size: cover;">
+<body class="img js-fullheight" style="background-image: url(images/coverLogin.jpg); height: 100px; background-position: center; background-repeat: no-repeat; background-size: cover;">
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -52,7 +52,8 @@ $this->registerCssFile('@web/css/loginHome.css');
                                 'errorOptions' => ['class' => 'col-lg-7 invalid-feedback'],
                             ],
                         ]); ?>
-
+                        
+                    <div class="space">
                         <div class="form-group">
                             <?= $form->field($model, 'username')->textInput(['autofocus' => true])
                                 ->input('username', ['placeholder' => "Username"]) ?>
@@ -80,6 +81,7 @@ $this->registerCssFile('@web/css/loginHome.css');
                         </div>
 
                         <?php ActiveForm::end(); ?>
+                    </div>
                     </div>
                 </div>
             </div>
