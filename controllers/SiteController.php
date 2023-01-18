@@ -152,4 +152,10 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+    public function actionDashboard()
+    {
+        $this->layout = 'dashboard';
+        return $this->render(view:'Dashboard');
+    }
 }
