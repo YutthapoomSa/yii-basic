@@ -19,10 +19,17 @@ class AppAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
+
+    // public $sourcePath = '@vendor/extension-ven/extension-name/assets';
+
     public $css = [
         'css/site.css',
     ];
     public $js = [
+        'js/sb-admin-2.min.js',
+        'vendor/jquery/jquery.min.js',
+        'vendor/bootstrap/js/bootstrap.bundle.min.js',
+        'vendor/jquery-easing/jquery.easing.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
