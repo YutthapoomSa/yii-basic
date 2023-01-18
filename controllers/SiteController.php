@@ -158,4 +158,40 @@ class SiteController extends Controller
         $this->layout = 'dashboard';
         return $this->render(view:'Dashboard');
     }
+
+    public function actionPurchase()
+    {
+        $this->layout = 'dashboard';
+        return $this->render(view:'purchase');
+    }
+
+    public function actionBorrow()
+    {
+        $this->layout = 'dashboard';
+        return $this->render(view:'borrow');
+    }
+
+    public function actionItem()
+    {
+        $this->layout = 'dashboard';
+        return $this->render(view:'item');
+    }
+
+    public function actionReturn()
+    {
+        $this->layout = 'dashboard';
+        return $this->render(view:'return');
+    }
+
+    public function actionPatient()
+    {
+        $this->layout = 'dashboard';
+        return $this->render(view:'patient');
+    }
+
+    public function actionInpatient()
+    {
+        $this->layout = 'dashboard';
+        return $this->render(view:'inpatient');
+    }
 }

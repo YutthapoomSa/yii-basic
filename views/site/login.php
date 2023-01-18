@@ -73,7 +73,7 @@ $this->registerCssFile('@web/css/loginHome.css');
                         </div>
 
                         <div class="form-group">
-                            <?= Html::submitButton('Login', ['class' => 'form-control btn btn-primary submit px-3', 'name' => 'login-button']) ?>
+                        <a  href="index.php?r=site%2Fdashboard" class="form-control btn btn-primary submit px-3">Sign In</a>
                         </div>
 
                         <?php ActiveForm::end(); ?>
