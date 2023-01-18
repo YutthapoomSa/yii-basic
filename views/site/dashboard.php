@@ -6,7 +6,7 @@
 use yii\bootstrap5\ActiveForm;
 use yii\bootstrap5\Html;
 
-$this->title = 'Dashboard';
+$this->title = 'Smart Hospital';
 $this->registerCssFile('@web/css/dashboard.css');
 $this->registerCssFile('@web/vendor/fontawesome-free/css/all.min.css');
 
@@ -27,7 +27,7 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Smart Hospital</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -67,62 +67,115 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
     <div class="sidebar-brand-icon rotate-n-15">
         <i class="fas fa-dashboard"></i>
     </div>
-    <div class="sidebar-brand-text mx-3">Dashboard </div>
+    <div class="sidebar-brand-text mx-3">Smart Hospital</div>
 </a>
 
 <!-- Divider -->
 <hr class="sidebar-divider my-0">
 
 <!-- Nav Item - Dashboard -->
-<li class="nav-item active">
-    <a class="nav-link" href="index.php">
+<div class="nav-item active">
+    <a class="nav-link" href="#">
         <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Dashboard</span></a>
-</li>
+        <span>หน้าหลัก</span></a>
+</div>
 
 <!-- Divider -->
 <hr class="sidebar-divider">
 
 <!-- Heading -->
 <div class="sidebar-heading">
-    ผู้บริหาร
+    เมนูหลัก
 </div>
 
 <!-- Nav Item - Pages Collapse Menu -->
-<li class="nav-item">
+<div class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
         aria-expanded="true" aria-controls="collapseTwo">
-        <i class="fas fa-fw fa-cog"></i>
-        <span>ข้อมูลสต็อก</span>
+        <i class="fa-solid fa-people-simple"></i>
+        <span>จำนวนผู้ใช้บริการ</span>
     </a>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">ข้อมูลสต็อก:</h6>
+            <h6 class="collapse-header">เมนูย่อย:</h6>
             <!-- <a class="collapse-item" href="blank.html">ภาพรวม</a> -->
-            <a class="collapse-item" href="index.php?r=site%2Fborrow">ใบยืม</a>
-            <a class="collapse-item" href="index.php?r=site%2Fpurchase">ใบสั่งซื้อ</a>
-            <a class="collapse-item" href="index.php?r=site%2Fitem">ยา</a>
-            <a class="collapse-item" href="index.php?r=site%2Freturn">ใบคืน</a>
+            <a class="collapse-item" href="#">ผู้ป่วยนอก</a>
+            <a class="collapse-item" href="#">ผู้ป่วยใน</a>
+            <a class="collapse-item" href="#">ผู้ป่วยใหม่</a>
         </div>
     </div>
-</li>
-
+</ก>
+</div>
 <!-- Nav Item - Utilities Collapse Menu -->
-<li class="nav-item">
+<div class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
         aria-expanded="true" aria-controls="collapseUtilities">
-        <i class="fas fa-fw fa-wrench"></i>
-        <span>ข้อมูลและสถิติ</span>
+        <i class="fa-solid fa-virus-covid"></i>
+        <span>ผู้ป่วยโควิด-19</span>
     </a>
     <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
         data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">ข้อมูลและสถิติ</h6>
-            <a class="collapse-item" href="index.php?r=site%2Fpatient">จำนวนผู้รับบริการ</a>
-            <a class="collapse-item" href="index.php?r=site%2Finpatient">ภาพรวมผู้ป่วยใน</a>
+            <h6 class="collapse-header">เมนูย่อย</h6>
+            <a class="collapse-item" href="#">จำนวนผู้ป่วยโควิดทั้งหมด</a>
+            <a class="collapse-item" href="#">จำนวนนักศึกษา</a>
+            <a class="collapse-item" href="#">ผู้ป่วยในติดโควิด</a>
         </div>
     </div>
-</li>
+</div>
+
+<!-- Nav Item - Utilities Collapse Menu -->
+<div class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+        aria-expanded="true" aria-controls="collapseUtilities">
+        <i class="fas fa-fw fa-wrench"></i>
+        <span>สถิติการวินิจฉัย</span>
+    </a>
+    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+        data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">เมนูย่อย</h6>
+            <a class="collapse-item" href="#">สถิติ ICD10 OPD</a>
+            <a class="collapse-item" href="#">สถิติ ICD10 IPD</a>
+            <a class="collapse-item" href="#">บุคคล</a>
+            <a class="collapse-item" href="#">บุคคลากร</a>
+        </div>
+    </div>
+</div>
+
+<!-- Nav Item - Pages Collapse Menu -->
+<div class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+        aria-expanded="true" aria-controls="collapseTwo">
+        <i class="fa-solid fa-people-simple"></i>
+        <span>ออกตรวจ OPD</span>
+    </a>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">เมนูย่อย:</h6>
+            <a class="collapse-item" href="#">ตารางออกตรวจ OPD</a>
+        </div>
+    </div>
+</div>
+
+<!-- Nav Item - Pages Collapse Menu -->
+<div class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+        aria-expanded="true" aria-controls="collapseTwo">
+        <i class="fa-solid fa-people-simple"></i>
+        <span>รายได้</span>
+    </a>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">เมนูย่อย:</h6>
+            <a class="collapse-item" href="#">รายได้ OPD</a>
+            <a class="collapse-item" href="#">รายได้ IPD</a>
+            <a class="collapse-item" href="#">รายได้แยกตามคลินิค</a>
+            <a class="collapse-item" href="#">รายได้แยกตามสิทธิ</a>
+            <a class="collapse-item" href="#">การใช้จ่ายงบประมาณ</a>
+        </div>
+    </div>
+</div>
 
 <!-- Divider -->
 <hr class="sidebar-divider">
@@ -252,7 +305,7 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="alertsDropdown">
                                 <h6 class="dropdown-header">
-                                    Alerts Center
+                                    การแจ้งเตือน
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="mr-3">
@@ -261,7 +314,7 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <div class="small text-gray-500">ธันวาคม 12, 2019</div>
                                         <span class="font-weight-bold">A new monthly report is ready to download!</span>
                                     </div>
                                 </a>
@@ -272,7 +325,7 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        <div class="small text-gray-500">ธันวาคม 7, 2019</div>
                                         $290.29 has been deposited into your account!
                                     </div>
                                 </a>
@@ -283,11 +336,11 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        <div class="small text-gray-500">ธันวาคม 2, 2019</div>
                                         Spending Alert: We've noticed unusually high spending for your account.
                                     </div>
                                 </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">แสดงการแจ้งเตือนทั้งหมด</a>
                             </div>
                         </li>
 
@@ -303,7 +356,7 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="messagesDropdown">
                                 <h6 class="dropdown-header">
-                                    Message Center
+                                    ข้อความ
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
@@ -353,7 +406,7 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                         <div class="small text-gray-500">Chicken the Dog · 2w</div>
                                     </div>
                                 </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">เปลี่ยนเป็นอ่านทั้งหมด</a>
                             </div>
                         </li>
 

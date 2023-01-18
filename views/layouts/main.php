@@ -38,35 +38,6 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 
 <header id="header">
     <?php
-<<<<<<< HEAD
-NavBar::begin([
-    'brandLabel' => Yii::$app->name,
-    'brandUrl' => Yii::$app->homeUrl,
-    'options' => ['class' => 'navbar-expand-md navbar-dark bg-dark fixed-top'],
-]);
-echo Nav::widget([
-    'options' => ['class' => 'navbar-nav'],
-    'items' => [
-        ['label' => 'Index', 'url' => ['/site/home']],
-        ['label' => 'Menu', 'url' => ['/menu/dashboard']],
-        ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
-        Yii::$app->user->isGuest
-        ? ['label' => 'LogIn', 'url' => ['/site/log']]
-        : '<li class="nav-item">'
-        . Html::beginForm(['/site/logout'])
-        . Html::submitButton(
-            'Logout (' . Yii::$app->user->identity->username . ')',
-            ['class' => 'nav-link btn btn-link logout']
-        )
-        . Html::endForm()
-        . '</li>',
-    ],
-]);
-NavBar::end();
-?>
-=======
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
@@ -101,7 +72,6 @@ NavBar::end();
     ]);
     NavBar::end();
     ?>
->>>>>>> 5e11a445e8ea7d611a7a813c06ccf9898eb58483
 </header>
 
 <main id="main" class="flex-shrink-0" role="main">
