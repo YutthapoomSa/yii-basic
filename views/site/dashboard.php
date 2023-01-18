@@ -416,7 +416,7 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                                 <img class="img-profile rounded-circle"
                                     src="images/undraw_profile.svg">
                             </a>
@@ -425,20 +425,20 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
+                                    บัญชีผู้ใช้งาน
                                 </a>
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
+                                    ตั้งค่า
                                 </a>
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
+                                    บันทึกกิจกรรม
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
+                                    ออกจากระบบ
                                 </a>
                             </div>
                         </li>
@@ -455,7 +455,7 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h5 mb-0 text-gray-800">Dashboard โรงพยาบาลค่ายวชิราวุธ</h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                                class="fas fa-download fa-sm text-white-50"></i> ดาวน์โหลดรายงาน</a>
                     </div>
 
                     <!-- Content Row -->
@@ -985,11 +985,12 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
+            <footer id="footer" class="mt-auto py-3 bg-light">
+            <div class="container">
+                <div class="row text-muted">
+                     <div class="col-md-6 text-center text-md-start">&copy; Smart Hospital <?=date('Y')?></div>
+            <div class="col-md-6 text-center text-md-end"><?=Yii::powered()?></div>
+                </div>
                 </div>
             </footer>
             <!-- End of Footer -->
