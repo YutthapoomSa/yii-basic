@@ -115,7 +115,6 @@ $this->registerCssFile('@web/css/dashboard.css');
                 Addons
             </div> -->
 
-            <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item active">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
                     aria-controls="collapsePages">
@@ -134,6 +133,23 @@ $this->registerCssFile('@web/css/dashboard.css');
                 </div>
             </li>
 
+            
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>ข้อมูลและสถิติ</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">ข้อมูลและสถิติ</h6>
+                        <a class="collapse-item" href="index.php?r=site%2Fpatient">จำนวนผู้รับบริการ</a>
+                        <a class="collapse-item" href="index.php?r=site%2Finpatient">ภาพรวมผู้ป่วยใน</a>
+                    </div>
+                </div>
+            </li>
 
             <!-- Nav Item - Charts -->
             <!-- <li class="nav-item">

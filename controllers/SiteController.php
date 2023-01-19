@@ -174,7 +174,7 @@ class SiteController extends Controller
     public function actionItem()
     {
         $this->layout = 'dashboard';
-        return $this->render('dashboard');
+        return $this->render('item');
     }
 
     public function actionReturn()
