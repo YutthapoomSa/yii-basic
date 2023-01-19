@@ -10,10 +10,10 @@ $this->title = 'Dashboard';
 $this->registerCssFile('@web/css/dashboard.css');
 $this->registerCssFile('@web/vendor/fontawesome-free/css/all.min.css');
 
-$this->registerJsFile('@web/vendor/jquery/jquery.min.js');  
-$this->registerJsFile('@web/vendor/bootstrap/js/bootstrap.bundle.min.js');  
-$this->registerJsFile('@web/vendor/jquery-easing/jquery.easing.min.js');  
-$this->registerJsFile('@web/js/sb-admin-2.min.js');  
+$this->registerJsFile('@web/vendor/jquery/jquery.min.js');
+$this->registerJsFile('@web/vendor/bootstrap/js/bootstrap.bundle.min.js');
+$this->registerJsFile('@web/vendor/jquery-easing/jquery.easing.min.js');
+$this->registerJsFile('@web/js/sb-admin-2.min.js');
 ?>
 
 <!DOCTYPE html>
@@ -55,85 +55,85 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
 </head>
 
 <body id="page-top">
-<!-- test -->
+    <!-- test -->
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-       <!-- Sidebar -->
- <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-<!-- Sidebar - Brand -->
-<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-    <div class="sidebar-brand-icon rotate-n-15">
-        <i class="fas fa-dashboard"></i>
-    </div>
-    <div class="sidebar-brand-text mx-3">Dashboard </div>
-</a>
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fa fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Smart Hospital</div>
+            </a>
 
-<!-- Divider -->
-<hr class="sidebar-divider my-0">
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
 
-<!-- Nav Item - Dashboard -->
-<li class="nav-item active">
-    <a class="nav-link" href="index.php">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Dashboard</span></a>
-</li>
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
 
-<!-- Divider -->
-<hr class="sidebar-divider">
+            <!-- Divider -->
+            <hr class="sidebar-divider">
 
-<!-- Heading -->
-<div class="sidebar-heading">
-    ผู้บริหาร
-</div>
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                ผู้บริหาร
+            </div>
 
-<!-- Nav Item - Pages Collapse Menu -->
-<li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-        aria-expanded="true" aria-controls="collapseTwo">
-        <i class="fas fa-fw fa-cog"></i>
-        <span>ข้อมูลสต็อก</span>
-    </a>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">ข้อมูลสต็อก:</h6>
-            <!-- <a class="collapse-item" href="blank.html">ภาพรวม</a> -->
-            <a class="collapse-item" href="index.php?r=site%2Fborrow">ใบยืม</a>
-            <a class="collapse-item" href="index.php?r=site%2Fpurchase">ใบสั่งซื้อ</a>
-            <a class="collapse-item" href="index.php?r=site%2Fitem">ยา</a>
-            <a class="collapse-item" href="index.php?r=site%2Freturn">ใบคืน</a>
-        </div>
-    </div>
-</li>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>ข้อมูลสต็อก</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">ข้อมูลสต็อก:</h6>
+                        <!-- <a class="collapse-item" href="blank.html">ภาพรวม</a> -->
+                        <a class="collapse-item" href="index.php?r=site%2Fborrow">ใบยืม</a>
+                        <a class="collapse-item" href="index.php?r=site%2Fpurchase">ใบสั่งซื้อ</a>
+                        <a class="collapse-item" href="index.php?r=site%2Fitem">ยา</a>
+                        <a class="collapse-item" href="index.php?r=site%2Freturn">ใบคืน</a>
+                    </div>
+                </div>
+            </li>
 
-<!-- Nav Item - Utilities Collapse Menu -->
-<li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-        aria-expanded="true" aria-controls="collapseUtilities">
-        <i class="fas fa-fw fa-wrench"></i>
-        <span>ข้อมูลและสถิติ</span>
-    </a>
-    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-        data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">ข้อมูลและสถิติ</h6>
-            <a class="collapse-item" href="index.php?r=site%2Fpatient">จำนวนผู้รับบริการ</a>
-            <a class="collapse-item" href="index.php?r=site%2Finpatient">ภาพรวมผู้ป่วยใน</a>
-        </div>
-    </div>
-</li>
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>ข้อมูลและสถิติ</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">ข้อมูลและสถิติ</h6>
+                        <a class="collapse-item" href="index.php?r=site%2Fpatient">จำนวนผู้รับบริการ</a>
+                        <a class="collapse-item" href="index.php?r=site%2Finpatient">ภาพรวมผู้ป่วยใน</a>
+                    </div>
+                </div>
+            </li>
 
-<!-- Divider -->
-<hr class="sidebar-divider">
+            <!-- Divider -->
+            <hr class="sidebar-divider">
 
-<!-- Heading -->
-<!-- <div class="sidebar-heading">
+            <!-- Heading -->
+            <!-- <div class="sidebar-heading">
     Addons
 </div> -->
 
-<!-- Nav Item - Pages Collapse Menu -->
-<!-- <li class="nav-item">
+            <!-- Nav Item - Pages Collapse Menu -->
+            <!-- <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
         aria-expanded="true" aria-controls="collapsePages">
         <i class="fas fa-fw fa-folder"></i>
@@ -154,36 +154,36 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
 </li>
 
 <!-- Nav Item - Charts -->
-<!-- <li class="nav-item"> -->
-    <!-- <a class="nav-link" href="charts.html">
+            <!-- <li class="nav-item"> -->
+            <!-- <a class="nav-link" href="charts.html">
         <i class="fas fa-fw fa-chart-area"></i>
         <span>Charts</span></a> -->
-</li>
+            </li>
 
-<!-- Nav Item - Tables -->
-<!-- <li class="nav-item"> -->
-    <!-- <a class="nav-link" href="tables.html">
+            <!-- Nav Item - Tables -->
+            <!-- <li class="nav-item"> -->
+            <!-- <a class="nav-link" href="tables.html">
         <i class="fas fa-fw fa-table"></i>
         <span>Tables</span></a> -->
-<!-- </li> --> -->
+            <!-- </li> --> -->
 
-<!-- Divider -->
-<!-- <hr class="sidebar-divider d-none d-md-block"> -->
+            <!-- Divider -->
+            <!-- <hr class="sidebar-divider d-none d-md-block"> -->
 
-<!-- Sidebar Toggler (Sidebar) -->
-<!-- <div class="text-center d-none d-md-inline">
+            <!-- Sidebar Toggler (Sidebar) -->
+            <!-- <div class="text-center d-none d-md-inline">
     <button class="rounded-circle border-0" id="sidebarToggle"></button>
 </div> -->
 
-<!-- Sidebar Message -->
-<!-- <div class="sidebar-card d-none d-lg-flex">
+            <!-- Sidebar Message -->
+            <!-- <div class="sidebar-card d-none d-lg-flex">
     <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
     <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
     <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
 </div> -->
 
-</ul>
-<!-- End of Sidebar -->
+        </ul>
+        <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -307,8 +307,7 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="images/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="images/undraw_profile_1.svg" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -319,8 +318,7 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -331,8 +329,7 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -364,8 +361,7 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="images/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="images/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -387,7 +383,7 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
-                            </div>
+                            </div>                                                                                                                                                                                                                      
                         </li>
 
                     </ul>
@@ -416,7 +412,8 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                             <div class="h6 mb-0 font-weight-bold text-primary text-uppercase mb-1">
                                                 ผู้รับบริการวันนี้</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">36</div>
-                                            <div class="h7 mb-0 font-weight-bold text-gray-800">(เดือนนี้ 161 คน / 263 ครั้ง)</div>
+                                            <div class="h7 mb-0 font-weight-bold text-gray-800">(เดือนนี้ 161 คน / 263
+                                                ครั้ง)</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-stethoscope fa-3x text-gray-300"></i>
@@ -433,9 +430,10 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2"><br>
                                             <div class="h6 mb-0 font-weight-bold text-warning text-uppercase mb-1">
-                                            Admit วันนี้</div>
+                                                Admit วันนี้</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">1</div>
-                                            <div class="h7 mb-0 font-weight-bold text-gray-800">(เดือนนี้ 43 คน / 43 ครั้ง)</div>
+                                            <div class="h7 mb-0 font-weight-bold text-gray-800">(เดือนนี้ 43 คน / 43
+                                                ครั้ง)</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-heartbeat fa-3x text-gray-300"></i>
@@ -452,9 +450,10 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2"><br>
                                             <div class="h6 mb-0 font-weight-bold text-info text-uppercase mb-1">
-                                            แพทย์แผนไทย วันนี้</div>
+                                                แพทย์แผนไทย วันนี้</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">3</div>
-                                            <div class="h7 mb-0 font-weight-bold text-gray-800">(เดือนนี้ 3 คน / 3 ครั้ง)</div>
+                                            <div class="h7 mb-0 font-weight-bold text-gray-800">(เดือนนี้ 3 คน / 3
+                                                ครั้ง)</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-cannabis fa-3x text-gray-300"></i>
@@ -471,9 +470,10 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2"><br>
                                             <div class="h6 mb-0 font-weight-bold text-success text-uppercase mb-1">
-                                            ทันตกรรม วันนี้</div>
+                                                ทันตกรรม วันนี้</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
-                                            <div class="h7 mb-0 font-weight-bold text-gray-800">(เดือนนี้ 10 คน / 10 ครั้ง)</div>
+                                            <div class="h7 mb-0 font-weight-bold text-gray-800">(เดือนนี้ 10 คน / 10
+                                                ครั้ง)</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-tooth fa-3x text-gray-300"></i>
@@ -494,9 +494,10 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="h6 mb-0 font-weight-bold text-gray-800 text-uppercase mb-1">
-                                            วันนี้</div>
+                                                วันนี้</div>
                                             <div class="h7 mb-0 font-weight-bold text-gray-800">X-Ray</div>
-                                            <div class="text-xs font-weight-bold text-gray-800">เดือนนี้ 7 คน / 7 ครั้ง</div>
+                                            <div class="text-xs font-weight-bold text-gray-800">เดือนนี้ 7 คน / 7 ครั้ง
+                                            </div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-radiation-alt fa-3x text-gray-300"></i>
@@ -513,9 +514,10 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="h6 mb-0 font-weight-bold text-gray-800 text-uppercase mb-1">
-                                            วันนี้</div>
+                                                วันนี้</div>
                                             <div class="h7 mb-0 font-weight-bold text-gray-800">อุบัติเหตุ</div>
-                                            <div class="text-xs font-weight-bold text-gray-800">เดือนนี้ 6 คน / 6 ครั้ง</div>
+                                            <div class="text-xs font-weight-bold text-gray-800">เดือนนี้ 6 คน / 6 ครั้ง
+                                            </div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-exclamation-triangle fa-3x text-gray-300"></i>
@@ -532,9 +534,10 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="h6 mb-0 font-weight-bold text-gray-800 text-uppercase mb-1">
-                                            วันนี้</div>
+                                                วันนี้</div>
                                             <div class="h7 mb-0 font-weight-bold text-gray-800">กายภาพบำบัด</div>
-                                            <div class="text-xs font-weight-bold text-gray-800">เดือนนี้ 12 คน / 12 ครั้ง</div>
+                                            <div class="text-xs font-weight-bold text-gray-800">เดือนนี้ 12 คน / 12
+                                                ครั้ง</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-user-md fa-3x text-gray-300"></i>
@@ -551,9 +554,10 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="h6 mb-0 font-weight-bold text-gray-800 text-uppercase mb-1">
-                                            วันนี้</div>
+                                                วันนี้</div>
                                             <div class="h7 mb-0 font-weight-bold text-gray-800">ผู้ป่วยผ่าตัด</div>
-                                            <div class="text-xs font-weight-bold text-gray-800">เดือนนี้ 3 คน / 3 ครั้ง</div>
+                                            <div class="text-xs font-weight-bold text-gray-800">เดือนนี้ 3 คน / 3 ครั้ง
+                                            </div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-syringe fa-3x text-gray-300"></i>
@@ -576,64 +580,83 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
 
                             <!-- Project Card Example -->
                             <div class="card shadow mb-4">
-                                 <div class="card-header py-3">
+                                <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary">สถิติผู้ป่วยในวันนี้</h6>
                                     จำนวนเตียงทั้งหมด 24 เตียง
                                 </div>
-                                
+
                                 <div class="card-body">
-                                <div class="table-responsive">
-                                <table class="table" id="dataTable" width="100%">
-                                    <thead>
-    
-                                        <tr >
-                                            <th ><a href="">รับใหม่วันนี้</a></th>
-                                            <th align="left"><a href=""><button type="button" class="btn btn-outline-success btn-sm">1 เตียง</button></a></th>
-                                            <th ><a href="">สิทธิ์ชำระเงินและเบิกได้</a></th>
-                                            <th align="left"><a href=""><button type="button" class="btn btn-outline-success btn-sm">2 เตียง</button></a></th>
-                                        </tr>
-                                        <tr>
-                                            <th ><a href="">จำหน่ายวันนี้ </a></th>
-                                            <th align="left"><a href=""><button type="button" class="btn btn-outline-success btn-sm">4 เตียง</button></a></th>
-                                            <th ><a href="">สิทธิ์ UC</a></th>
-                                            <th align="left"><a href=""><button type="button" class="btn btn-outline-success btn-sm">1 เตียง</button></a></th>
-                                        </tr>
-                                        <tr>
-                                            <th ><a href="">Admit อยู่ </a></th>
-                                            <th align="left"><a href=""><button type="button" class="btn btn-outline-success btn-sm">3 เตียง</button></a></th>
-                                            <th ><a href="">สิทธิอื่นๆ </a></th>
-                                            <th align="left"><a href=""><button type="button" class="btn btn-outline-success btn-sm">1 เตียง</button></a></th>
-                                        </tr>
-                                        <tr>
-                                            <th ><a href="">เตียงว่าง </a></th>
-                                            <th align="left"><a href=""><button type="button" class="btn btn-outline-success btn-sm">8 เตียง</button></a></th>
-                                            <th ><a href="">อัตราการครองเตียง </a></th>
-                                            <th align="left"><a href=""><button type="button" class="btn btn-outline-success btn-sm">4 เตียง</button></a></th>
-                                        </tr>
-                                    </thead>
-                                    </table>
+                                    <div class="table-responsive">
+                                        <table class="table" id="dataTable" width="100%">
+                                            <thead>
+
+                                                <tr>
+                                                    <th><a href="">รับใหม่วันนี้</a></th>
+                                                    <th align="left"><a href=""><button type="button"
+                                                                class="btn btn-outline-success btn-sm">1
+                                                                เตียง</button></a></th>
+                                                    <th><a href="">สิทธิ์ชำระเงินและเบิกได้</a></th>
+                                                    <th align="left"><a href=""><button type="button"
+                                                                class="btn btn-outline-success btn-sm">2
+                                                                เตียง</button></a></th>
+                                                </tr>
+                                                <tr>
+                                                    <th><a href="">จำหน่ายวันนี้ </a></th>
+                                                    <th align="left"><a href=""><button type="button"
+                                                                class="btn btn-outline-success btn-sm">4
+                                                                เตียง</button></a></th>
+                                                    <th><a href="">สิทธิ์ UC</a></th>
+                                                    <th align="left"><a href=""><button type="button"
+                                                                class="btn btn-outline-success btn-sm">1
+                                                                เตียง</button></a></th>
+                                                </tr>
+                                                <tr>
+                                                    <th><a href="">Admit อยู่ </a></th>
+                                                    <th align="left"><a href=""><button type="button"
+                                                                class="btn btn-outline-success btn-sm">3
+                                                                เตียง</button></a></th>
+                                                    <th><a href="">สิทธิอื่นๆ </a></th>
+                                                    <th align="left"><a href=""><button type="button"
+                                                                class="btn btn-outline-success btn-sm">1
+                                                                เตียง</button></a></th>
+                                                </tr>
+                                                <tr>
+                                                    <th><a href="">เตียงว่าง </a></th>
+                                                    <th align="left"><a href=""><button type="button"
+                                                                class="btn btn-outline-success btn-sm">8
+                                                                เตียง</button></a></th>
+                                                    <th><a href="">อัตราการครองเตียง </a></th>
+                                                    <th align="left"><a href=""><button type="button"
+                                                                class="btn btn-outline-success btn-sm">4
+                                                                เตียง</button></a></th>
+                                                </tr>
+                                            </thead>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                        
+
                     </div>
-                    
+
 
                     <div class="row">
-                    
-                    <div class="col-xl-4 col-md-6 mb-4">
+
+                        <div class="col-xl-4 col-md-6 mb-4">
                             <div class="card border-bottom-primary shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                        <div class="h7 mb-0 font-weight-bold text-primary text-uppercase mb-1">ศูนย์รับผู้ป่วยใน</div>
-                                            <div class="h5 mb-0 font-weight-bold text-primary text-uppercase mb-1">Admit 24 / 40 เตียง (ว่าง 16)
+                                            <div class="h7 mb-0 font-weight-bold text-primary text-uppercase mb-1">
+                                                ศูนย์รับผู้ป่วยใน</div>
+                                            <div class="h5 mb-0 font-weight-bold text-primary text-uppercase mb-1">Admit
+                                                24 / 40 เตียง (ว่าง 16)
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="text-xs mr-3 font-weight-bold text-gray-800">ครองเตียง</div>
+                                                    <div class="text-xs mr-3 font-weight-bold text-gray-800">ครองเตียง
+                                                    </div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
@@ -657,12 +680,15 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                        <div class="h7 mb-0 font-weight-bold text-danger text-uppercase mb-1">ห้องผู้ป่วย ICU</div>
-                                            <div class="h5 mb-0 font-weight-bold text-danger text-uppercase mb-1">Admit 24 / 40 เตียง (ว่าง 16)
+                                            <div class="h7 mb-0 font-weight-bold text-danger text-uppercase mb-1">
+                                                ห้องผู้ป่วย ICU</div>
+                                            <div class="h5 mb-0 font-weight-bold text-danger text-uppercase mb-1">Admit
+                                                24 / 40 เตียง (ว่าง 16)
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="text-xs mr-3 font-weight-bold text-gray-800">ครองเตียง</div>
+                                                    <div class="text-xs mr-3 font-weight-bold text-gray-800">ครองเตียง
+                                                    </div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
@@ -687,12 +713,15 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                        <div class="h7 mb-0 font-weight-bold text-warning text-uppercase mb-1">หอผู้ป่วยสามัญชาย</div>
-                                            <div class="h5 mb-0 font-weight-bold text-warning text-uppercase mb-1">Admit 24 / 40 เตียง (ว่าง 16)
+                                            <div class="h7 mb-0 font-weight-bold text-warning text-uppercase mb-1">
+                                                หอผู้ป่วยสามัญชาย</div>
+                                            <div class="h5 mb-0 font-weight-bold text-warning text-uppercase mb-1">Admit
+                                                24 / 40 เตียง (ว่าง 16)
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="text-xs mr-3 font-weight-bold text-gray-800">ครองเตียง</div>
+                                                    <div class="text-xs mr-3 font-weight-bold text-gray-800">ครองเตียง
+                                                    </div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
@@ -717,12 +746,15 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                        <div class="h7 mb-0 font-weight-bold text-secondary text-uppercase mb-1">ห้องผู้ป่วยพิเศษ 1</div>
-                                            <div class="h5 mb-0 font-weight-bold text-secondary text-uppercase mb-1">Admit 10 / 40 เตียง (ว่าง 20)
+                                            <div class="h7 mb-0 font-weight-bold text-secondary text-uppercase mb-1">
+                                                ห้องผู้ป่วยพิเศษ 1</div>
+                                            <div class="h5 mb-0 font-weight-bold text-secondary text-uppercase mb-1">
+                                                Admit 10 / 40 เตียง (ว่าง 20)
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="text-xs mr-3 font-weight-bold text-gray-800">ครองเตียง</div>
+                                                    <div class="text-xs mr-3 font-weight-bold text-gray-800">ครองเตียง
+                                                    </div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
@@ -747,12 +779,15 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                        <div class="h7 mb-0 font-weight-bold text-info text-uppercase mb-1">หอผู้ป่วยสามัญหญิง</div>
-                                            <div class="h5 mb-0 font-weight-bold text-info text-uppercase mb-1">Admit 20 / 40 เตียง (ว่าง 20)
+                                            <div class="h7 mb-0 font-weight-bold text-info text-uppercase mb-1">
+                                                หอผู้ป่วยสามัญหญิง</div>
+                                            <div class="h5 mb-0 font-weight-bold text-info text-uppercase mb-1">Admit 20
+                                                / 40 เตียง (ว่าง 20)
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="text-xs mr-3 font-weight-bold text-gray-800">ครองเตียง</div>
+                                                    <div class="text-xs mr-3 font-weight-bold text-gray-800">ครองเตียง
+                                                    </div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
@@ -777,12 +812,15 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                        <div class="h7 mb-0 font-weight-bold text-success text-uppercase mb-1">ห้องผู้ป่วยสูติรีเวช</div>
-                                            <div class="h5 mb-0 font-weight-bold text-success text-uppercase mb-1">Admit 12 / 40 เตียง (ว่าง 38)
+                                            <div class="h7 mb-0 font-weight-bold text-success text-uppercase mb-1">
+                                                ห้องผู้ป่วยสูติรีเวช</div>
+                                            <div class="h5 mb-0 font-weight-bold text-success text-uppercase mb-1">Admit
+                                                12 / 40 เตียง (ว่าง 38)
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="text-xs mr-3 font-weight-bold text-gray-800">ครองเตียง</div>
+                                                    <div class="text-xs mr-3 font-weight-bold text-gray-800">ครองเตียง
+                                                    </div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
@@ -859,7 +897,7 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
                         </div>
 
                         <div class="col-xl-8 col-lg-5"> -->
-                                            <!-- DataTales Example 
+                    <!-- DataTales Example 
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">5 อันดับโรคผู้ป่วยใน</h6>
@@ -929,30 +967,30 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
             
 
             </div>   -->
-            <!-- End of Main Content -->
+                    <!-- End of Main Content -->
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
+                    <!-- Footer -->
+                    <footer class="sticky-footer bg-white">
+                        <div class="container my-auto">
+                            <div class="copyright text-center my-auto">
+                                <span>Copyright &copy; Your Website 2021</span>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- End of Footer -->
+
                 </div>
-            </footer>
-            <!-- End of Footer -->
+                <!-- End of Content Wrapper -->
 
-        </div>
-        <!-- End of Content Wrapper -->
+            </div>
+            <!-- End of Page Wrapper -->
 
-    </div>
-    <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button
+            <!-- Scroll to Top Button
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>-->
 
-    <!-- Logout Modal
+            <!-- Logout Modal
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">

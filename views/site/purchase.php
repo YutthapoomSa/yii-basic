@@ -31,7 +31,7 @@ $this->registerCssFile('@web/css/dashboard.css');
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    
+
     <!-- <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -47,11 +47,11 @@ $this->registerCssFile('@web/css/dashboard.css');
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                    <i class="fa fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">Smart Hospital</div>
             </a>
 
             <!-- Divider -->
@@ -117,23 +117,19 @@ $this->registerCssFile('@web/css/dashboard.css');
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item active">
-                <!-- <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
                     aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
-                </a> -->
+                    <span>ข้อมูลสต็อก</span>
+                </a>
                 <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <!-- <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a> -->
-                        <a class="collapse-item active" href="#">ใบสั่งซื้อ</a>
-                        <!-- <a class="collapse-item active" href="PO.html">ใบสั่งซื้อ</a> -->
+                        <h6 class="collapse-header">ข้อมูลสต็อก:</h6>
+                        <a class="collapse-item" href="index.php?r=site%2Fborrow">ใบยืม</a>
+                        <a class="collapse-item" href="index.php?r=site%2Fpurchase">ใบสั่งซื้อ</a>
+                        <a class="collapse-item" href="index.php?r=site%2Fitem">ยา</a>
+                        <a class="collapse-item" href="index.php?r=site%2Freturn">ใบคืน</a>
                     </div>
                 </div>
             </li>
@@ -285,8 +281,7 @@ $this->registerCssFile('@web/css/dashboard.css');
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -297,8 +292,7 @@ $this->registerCssFile('@web/css/dashboard.css');
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -309,8 +303,7 @@ $this->registerCssFile('@web/css/dashboard.css');
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -342,8 +335,7 @@ $this->registerCssFile('@web/css/dashboard.css');
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="images/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="images/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -381,7 +373,9 @@ $this->registerCssFile('@web/css/dashboard.css');
                     <!--
                     <iframe src="http://localhost:5601/s/nc/app/dashboards#/view/5a431d60-9245-11ed-84fa-3b9389b970fa?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-90y%2Cto%3Anow))&show-time-filter=true&hide-filter-bar=true" height="1000" width="100%"style="border:none;"></iframe>-->
 
-                    <iframe src="http://192.168.81.233:5601/s/nc/app/dashboards#/view/11067f60-76da-11ed-9687-938e5d2ad16e?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-20y%2Cto%3Anow))&show-time-filter=true&hide-filter-bar=true" height="1000" width="100%"style="border:none"></iframe>
+                    <iframe
+                        src="http://192.168.81.233:5601/s/nc/app/dashboards#/view/11067f60-76da-11ed-9687-938e5d2ad16e?embed=true&_g=(filters%3A!()%2CrefreshInterval%3A(pause%3A!t%2Cvalue%3A0)%2Ctime%3A(from%3Anow-20y%2Cto%3Anow))&show-time-filter=true&hide-filter-bar=true"
+                        height="1000" width="100%" style="border:none"></iframe>
                 </div>
                 <!-- /.container-fluid -->
 
