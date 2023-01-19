@@ -100,10 +100,10 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">ข้อมูลสต็อก:</h6>
                 <!-- <a class="collapse-item" href="blank.html">ภาพรวม</a> -->
-                <a class="collapse-item" href="stock-borrow.html">ใบยืม</a>
-                <a class="collapse-item" href="PO.html">ใบสั่งซื้อ</a>
-                <a class="collapse-item" href="stock-item.html">ยา</a>
-                <a class="collapse-item" href="stock-return.html">ใบคืน</a>
+                <a class="collapse-item" href="#">ใบยืม</a>
+                <a class="collapse-item" href="#">ใบสั่งซื้อ</a>
+                <a class="collapse-item" href="#">ยา</a>
+                <a class="collapse-item" href="#">ใบคืน</a>
             </div>
         </div>
     </li>
@@ -119,8 +119,8 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
         data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">ข้อมูลและสถิติ</h6>
-            <a class="collapse-item" href="utilities- patient.html">จำนวนผู้รับบริการ</a>
-            <a class="collapse-item" href="utilities-in-patient.html">ภาพรวมผู้ป่วยใน</a>
+            <a class="collapse-item" href="#">จำนวนผู้รับบริการ</a>
+            <a class="collapse-item" href="#">ภาพรวมผู้ป่วยใน</a>
         </div>
     </div>
 </li>
@@ -154,7 +154,7 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
     </div>
 </li>
 
-<!-- Nav Item - Charts -->
+< Nav Item - Charts -->
 <!-- <li class="nav-item"> -->
     <!-- <a class="nav-link" href="charts.html">
         <i class="fas fa-fw fa-chart-area"></i>
@@ -166,7 +166,7 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
     <!-- <a class="nav-link" href="tables.html">
         <i class="fas fa-fw fa-table"></i>
         <span>Tables</span></a> -->
-<!-- </li> --> -->
+<!-- </li> -->
 
 <!-- Divider -->
 <!-- <hr class="sidebar-divider d-none d-md-block"> -->
