@@ -2,9 +2,9 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=pdsolution.trueddns.com:44773;dbname=dashboard',
+    'dsn' => 'mysql:host=internal.neercode.com:3306;dbname=dashboard',
     'username' => 'root',
-    'password' => '1234P@ssw@rd2@22',
+    'password' => '123132123',
     'charset' => 'utf8',
 
     // Schema cache options (for production environment)
