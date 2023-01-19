@@ -50,7 +50,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             ['label' => 'Dashboard', 'url' => ['/site/dashboard']],
             // ['label' => 'PO', 'url' => ['/site/purchase']],
             // ['label' => 'Borrow', 'url' => ['/site/borrow']],
-            // ['label' => 'Item', 'url' => ['/site/item']],
+             ['label' => 'Item', 'url' => ['/site/item']],
             // ['label' => 'Return', 'url' => ['/site/return']],
             // ['label' => 'Patient', 'url' => ['/site/patient']],
             // ['label' => 'In Patient', 'url' => ['/site/inpatient']],

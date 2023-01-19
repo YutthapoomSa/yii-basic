@@ -32,11 +32,11 @@ $this->registerCssFile('@web/css/dashboard.css');
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+<!-- 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/sb-admin-2.min.js"></script> -->
 </head>
 
 <body id="page-top">
