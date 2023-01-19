@@ -17,7 +17,7 @@ $this->registerCssFile('@web/css/dashboard.css');
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<!-- <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -39,7 +39,7 @@ $this->registerCssFile('@web/css/dashboard.css');
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.png" />
 </head>
-<body>
+<!-- <body> -->
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">

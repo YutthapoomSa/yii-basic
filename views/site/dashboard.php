@@ -4,10 +4,11 @@
 /** @var yii\bootstrap5\ActiveForm $form */
 
 use yii\bootstrap5\ActiveForm;
-use yii\bootstrap5\Html;
+use yii\bootstrap5\Html;+
 
-$this->title = 'Smart Hospital';
-$this->registerCssFile('@web/css/dashboard.css');
+    // $this->title = 'Dashboard';
+// $this->title = 'Smart Hospital';
+$this->registerCssFile('@web/css/site.css');
 $this->registerCssFile('@web/vendor/fontawesome-free/css/all.min.css');
 
 $this->registerJsFile('@web/vendor/jquery/jquery.min.js');  
@@ -89,93 +90,40 @@ $this->registerJsFile('@web/js/sb-admin-2.min.js');
 </div>
 
 <!-- Nav Item - Pages Collapse Menu -->
-<div class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-        aria-expanded="true" aria-controls="collapseTwo">
-        <i class="fa-solid fa-people-simple"></i>
-        <span>จำนวนผู้ใช้บริการ</span>
-    </a>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">เมนูย่อย:</h6>
-            <!-- <a class="collapse-item" href="blank.html">ภาพรวม</a> -->
-            <a class="collapse-item" href="#">ผู้ป่วยนอก</a>
-            <a class="collapse-item" href="#">ผู้ป่วยใน</a>
-            <a class="collapse-item" href="#">ผู้ป่วยใหม่</a>
+<li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+            aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>ข้อมูลสต็อก</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">ข้อมูลสต็อก:</h6>
+                <!-- <a class="collapse-item" href="blank.html">ภาพรวม</a> -->
+                <a class="collapse-item" href="stock-borrow.html">ใบยืม</a>
+                <a class="collapse-item" href="PO.html">ใบสั่งซื้อ</a>
+                <a class="collapse-item" href="stock-item.html">ยา</a>
+                <a class="collapse-item" href="stock-return.html">ใบคืน</a>
+            </div>
         </div>
-    </div>
-</ก>
-</div>
-<!-- Nav Item - Utilities Collapse Menu -->
-<div class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-        aria-expanded="true" aria-controls="collapseUtilities">
-        <i class="fa-solid fa-virus-covid"></i>
-        <span>ผู้ป่วยโควิด-19</span>
-    </a>
-    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-        data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">เมนูย่อย</h6>
-            <a class="collapse-item" href="#">จำนวนผู้ป่วยโควิดทั้งหมด</a>
-            <a class="collapse-item" href="#">จำนวนนักศึกษา</a>
-            <a class="collapse-item" href="#">ผู้ป่วยในติดโควิด</a>
-        </div>
-    </div>
-</div>
+    </li>
 
 <!-- Nav Item - Utilities Collapse Menu -->
-<div class="nav-item">
+<li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
         aria-expanded="true" aria-controls="collapseUtilities">
         <i class="fas fa-fw fa-wrench"></i>
-        <span>สถิติการวินิจฉัย</span>
+        <span>ข้อมูลและสถิติ</span>
     </a>
     <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
         data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">เมนูย่อย</h6>
-            <a class="collapse-item" href="#">สถิติ ICD10 OPD</a>
-            <a class="collapse-item" href="#">สถิติ ICD10 IPD</a>
-            <a class="collapse-item" href="#">บุคคล</a>
-            <a class="collapse-item" href="#">บุคคลากร</a>
+            <h6 class="collapse-header">ข้อมูลและสถิติ</h6>
+            <a class="collapse-item" href="utilities- patient.html">จำนวนผู้รับบริการ</a>
+            <a class="collapse-item" href="utilities-in-patient.html">ภาพรวมผู้ป่วยใน</a>
         </div>
     </div>
-</div>
-
-<!-- Nav Item - Pages Collapse Menu -->
-<div class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-        aria-expanded="true" aria-controls="collapseTwo">
-        <i class="fa-solid fa-people-simple"></i>
-        <span>ออกตรวจ OPD</span>
-    </a>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">เมนูย่อย:</h6>
-            <a class="collapse-item" href="#">ตารางออกตรวจ OPD</a>
-        </div>
-    </div>
-</div>
-
-<!-- Nav Item - Pages Collapse Menu -->
-<div class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-        aria-expanded="true" aria-controls="collapseTwo">
-        <i class="fa-solid fa-people-simple"></i>
-        <span>รายได้</span>
-    </a>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">เมนูย่อย:</h6>
-            <a class="collapse-item" href="#">รายได้ OPD</a>
-            <a class="collapse-item" href="#">รายได้ IPD</a>
-            <a class="collapse-item" href="#">รายได้แยกตามคลินิค</a>
-            <a class="collapse-item" href="#">รายได้แยกตามสิทธิ</a>
-            <a class="collapse-item" href="#">การใช้จ่ายงบประมาณ</a>
-        </div>
-    </div>
-</div>
+</li>
 
 <!-- Divider -->
 <hr class="sidebar-divider">

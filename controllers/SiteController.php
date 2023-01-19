@@ -131,7 +131,7 @@ class SiteController extends Controller
     public function actionHome()
     {
         $this->layout = 'home';
-        return $this->render(view:'Home');
+        return $this->render('Home');
     }
 
     public function actionLog()
@@ -156,42 +156,42 @@ class SiteController extends Controller
     public function actionDashboard()
     {
         $this->layout = 'dashboard';
-        return $this->render(view:'Dashboard');
+        return $this->render('Dashboard');
     }
 
     public function actionPurchase()
     {
         $this->layout = 'dashboard';
-        return $this->render(view:'purchase');
+        return $this->render('purchase');
     }
 
     public function actionBorrow()
     {
         $this->layout = 'dashboard';
-        return $this->render(view:'borrow');
+        return $this->render('borrow');
     }
 
     public function actionItem()
     {
         $this->layout = 'dashboard';
-        return $this->render(view:'item');
+        return $this->render('dashboard');
     }
 
     public function actionReturn()
     {
         $this->layout = 'dashboard';
-        return $this->render(view:'return');
+        return $this->render('return');
     }
 
     public function actionPatient()
     {
         $this->layout = 'dashboard';
-        return $this->render(view:'patient');
+        return $this->render('patient');
     }
 
     public function actionInpatient()
     {
         $this->layout = 'dashboard';
-        return $this->render(view:'inpatient');
+        return $this->render('inpatient');
     }
 }
